@@ -1,0 +1,43 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "chat application",
+  "main": "dist/server.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "nodemon -e ts,js --exec ts-node -r tsconfig-paths/register src/server.ts",
+    "build": "yarn complie && yarn postBuild",
+    "build:local": "yarn complie && yarn postBuild && yarn cp-files",
+    "complie": "tsc -p .",
+    "postBuild": "ef-tspm",
+    "clean": "rm -rf dist/",
+    "cp-files": "cp ./src/Config/config.env ./dist/Config/config.env",
+    "release": "standard-version"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/color": "^3.0.6",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/morgan": "^1.9.9",
+    "commitizen": "^4.3.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.7.3",
+    "socket.io": "^4.8.1"
+  }
+}
