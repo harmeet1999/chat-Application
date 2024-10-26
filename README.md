@@ -93,12 +93,12 @@ chat/
 ### User Management
 1. Register
 
-![alt_text](./images\register.PNG)
+![alt_text](./images/register.PNG)
 
 
 
 2. Password Bcrypt
-![alt_text](./images\user_encryption.PNG)
+![alt_text](./images/user_encryption.PNG)
 
 3. Password Error
 
