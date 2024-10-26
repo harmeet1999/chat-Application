@@ -88,3 +88,68 @@ chat/
 2. **WebSocket Client**:
    Use a WebSocket client (e.g., [Postman WebSocket](https://learning.postman.com/docs/sending-requests/websocket/) or a simple web client) to connect to the server's WebSocket endpoint, which is typically at `ws://localhost:<port>` (replace `<port>` with the server’s port).
 ---
+
+
+### User Management
+1. Register
+
+![alt_text](./images\register.PNG)
+
+
+
+2. Password Bcrypt
+![alt_text](./images\user_encryption.PNG)
+
+3. Password Error
+
+![alt_text](./images/User%20password%20shorter%20than%208.PNG)
+
+4. User Already Exist
+
+![alt_text](./images/user%20already%20exists.PNG)
+
+
+5. Login
+![alt_text](./images/login%20return%20jwt%20token.PNG)
+
+
+6. Email not Found
+![alt_text](./images/login%20with%20email%20not%20found.PNG)
+
+
+7. Login invalid credentials
+
+![alt_text](./images/Login%20invalid%20credentials.PNG)
+
+
+8. Get User with JWT
+![alt_text](./images/GET%20user%20by%20jwt.PNG)
+
+
+
+### Chats
+
+1. Chat between two users
+
+![alt_text](./images/chat%20between%20two%20users.PNG)
+
+2. Chat between two users already exist
+![alt_text](./images/chat%20between%20two%20users%20already%20exist.PNG)
+
+3. Get chats
+![alt_text](./images/GET%20chats%20Retrieve%20a%20list.PNG)
+
+4. Get Chat by Id
+
+![alt_text](./images/GET%20chats%20chatId.PNG)
+
+
+### Messaging
+
+1. Send a message
+
+![alt_text](./images/Send%20a%20message.PNG)
+
+1. Message pagination
+
+![alt_text](./images/message%20pagination.PNG)
